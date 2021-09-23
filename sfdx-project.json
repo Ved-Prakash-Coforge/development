@@ -1,0 +1,39 @@
+{
+  "packageDirectories": [
+    {
+      "path": "./force-base",
+      "package": "force-base",
+      "versionName": "Base - summer 21",
+      "versionNumber": "1.0.0.NEXT",
+      "default": false
+    },
+    {
+      "path": "./force-sso",
+      "package": "force-sso",
+      "versionName": "SSO - summer 21",
+      "versionNumber": "1.0.0.NEXT",
+      "default": false
+    },
+    {
+      "path": "force-app-fsc",
+      "package": "force-app-fsc",
+      "versionName": "FSC Project - summer 21",
+      "versionNumber": "1.0.0.NEXT",
+      "default": true,
+      "dependencies": [
+        {
+            "package": "force-base",
+            "versionNumber": "1.0.0.LATEST"
+        },
+        {
+            "package": "force-sso",
+            "versionNumber": "1.0.0.LATEST"
+        }
+      ]
+    }
+  ],
+  "name": "ScratchDevelopmentOrg",
+  "namespace": "",
+  "sfdcLoginUrl": "https://login.salesforce.com",
+  "sourceApiVersion": "52.0"
+}
